@@ -1,5 +1,5 @@
 {
-    "name": "Fastposter/Client",
+    "name": "fastposter/fastposter",
     "description": "A fastposter client for PHP.",
     "type": "library",
     "license": "MIT",
