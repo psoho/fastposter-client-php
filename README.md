@@ -19,3 +19,7 @@ $params = [
 ];
 $client->buildPoster("80058c79d1e2e617", $params)->save('a.png');
 ```
+
+## 效果
+
+<img width="300" align="center" src="a.png" >
