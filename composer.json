@@ -1,0 +1,19 @@
+{
+    "name": "Fastposter/Client",
+    "description": "A fastposter client for PHP.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fastposter\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alex",
+            "email": "fastposter@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

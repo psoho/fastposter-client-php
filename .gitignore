@@ -1,0 +1,7 @@
+/vendor/
+*.lock
+*.png
+*.jpg
+*.jpeg
+*.webp
+.idea
