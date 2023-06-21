@@ -1,7 +1,8 @@
 /vendor/
+.idea
 *.lock
 *.png
 *.jpg
 *.jpeg
 *.webp
-.idea
+!a.png
