@@ -6,7 +6,7 @@ namespace Fastposter;
 define("FASTPOSETER_CLIENT_HEADERS", [
     "Content-type:application/json",
     "Client-Type:php",
-    "Client-Version:1.1.0"
+    "Client-Version:1.2.0"
 ]);
 
 // 定义常量 接入点
