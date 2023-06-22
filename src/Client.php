@@ -32,7 +32,7 @@ class Client
      * @param $type 生成的海报类型<png,jpeg,jpg,webp,pdf>
      * @return Poster
      */
-    public function buildPoster($uuid, $params = [], $type = "png", $b64 = false): Poster
+    public function buildPoster($uuid, $params = [], $type = "png"): Poster
     {
         if (empty($params)) {
             $params = ["t" => ""];
@@ -44,8 +44,7 @@ class Client
             'uuid' => $uuid,
             'timestamp' => $timestamp,
             'payload' => $payload,
-            'type' => $type,
-            'b64' => $b64
+            'type' => $type
         ];
         $headers = ["token:" . $this->token];
         return new Poster($uuid . "." . $type, http_post($this->apiUrl, $data, $headers));

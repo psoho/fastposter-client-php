@@ -25,6 +25,13 @@ class Poster
         }
     }
 
+    /**
+     *
+     * 保存海报图片
+     *
+     * @param $filename 指定文件路径
+     * @return mixed|string|null  返回海报文件名
+     */
     public function save($filename = '')
     {
         if ($this->code != 0) {
@@ -35,6 +42,16 @@ class Poster
         }
         file_put_contents($filename, $this->result);
         return $filename;
+    }
+
+    /**
+     * 返回海报的base64格式字符串
+     *
+     * @return string
+     */
+    public function b64String(): string
+    {
+        return base64_encode($this->result);
     }
 
 }

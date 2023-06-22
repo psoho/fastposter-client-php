@@ -7,6 +7,7 @@ $client = new Fastposter\Client("ApfrIzxCoK1DwNZOEJCwlrnv6QZ0PCdv", "https://pos
 $params = [
     'title' => '我的第一个海报2'
 ];
-$client->buildPoster("80058c79d1e2e617", $params)->save('a.png');
+//$client->buildPoster("80058c79d1e2e617", $params)->save('a.png');
+print($client->buildPoster("80058c79d1e2e617", $params)->b64String());
 
 

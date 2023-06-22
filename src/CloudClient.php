@@ -24,7 +24,7 @@ class CloudClient
         $this->apiUrl = ENDPOINT . "/v1/build/poster";
     }
 
-    public function buildPoster($uuid, $params = [], $type = "png", $b64 = false)
+    public function buildPoster($uuid, $params = [], $type = "png")
     {
         if (empty($params)) {
             $params = ["t" => ""];
@@ -42,8 +42,7 @@ class CloudClient
             'nonce' => $nonce,
             'payload' => $payload,
             'sign' => $sign,
-            'type' => $type,
-            'b64' => $b64
+            'type' => $type
         ];
         return new Poster($uuid . "." . $type, http_post($this->apiUrl, $data));
     }
